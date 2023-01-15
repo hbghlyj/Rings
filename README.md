@@ -2,6 +2,7 @@ reprint [Oxford 2023 "Rings &amp; Modules"](https://courses.maths.ox.ac.uk/plugi
 
 # Software
 Mainly use [Gnu TeXmacs](texmacs.org/) (for LaTeX layout)
+
 Others:
 * Google doc (for text OCR)
 * Mathpix (for math OCR)
