@@ -24,30 +24,30 @@
   <section|Rings>
 
   A set <math|R> containing two (possibly equal) elements 0 and 1, and
-  supporting two binary operations + and\<times\>is a <strong|ring> if
+  supporting two binary operations <math|+> and <math|\<times\>> is a
+  <strong|ring> if
 
   <\itemize-dot>
-    <item><math|R> equipped with + is a commutative group;
+    <item><math|R> equipped with <math|+> is a commutative group;
 
-    <item>\<times\> is an associative binary operation on <math|R> with
-    identity 1;
+    <item><math|\<times\>> is an associative binary operation on <math|R>
+    with identity 1;
 
-    <item>\<times\> is distributive over +.
+    <item><math|\<times\>> is distributive over <math|+>.
   </itemize-dot>
 
   Occasionally we shall have multiple rings and it will be instructive to
   clarify which particular ring we are referring to. We shall do this with
   subscripts writing, for example, <math|+<rsub|R>> or <math|1<rsub|R>>
-  instead of + and 1 above. Identity of associative binary operations is
-  unique when it exists.
+  instead of <math|+> and 1 above. Identity of associative binary operations
+  is unique when it exists.
 
-  The operation + is the <strong|addition> of the ring, the set <math|R> with
-  the operation + is the <strong|additive group> of the ring and we denote
-  its identity 0, the <strong|zero> of the ring, and . For each
-  <math|x\<in\>R> we write <math|-x> for the unique inverse of <math|x>
-  w.r.t. addition, and the map <math|R\<rightarrow\>R;x\<mapsto\>-x> is the
-  <strong|negation> of the ring; we write <math|x-y> for
-  <math|x+<around*|(|-y|)>>.
+  The operation <math|+> is the <strong|addition> of the ring, 0 is the
+  <strong|zero> of the ring, and the set <math|R> with the operation <math|+>
+  is the <strong|additive group> of the ring. For each <math|x\<in\>R> we
+  write <math|-x> for the unique inverse of <math|x> w.r.t. addition, and the
+  map <math|R\<rightarrow\>R;x\<mapsto\>-x> is the <strong|negation> of the
+  ring; we write <math|x-y> for <math|x+<around*|(|-y|)>>.
 
   We call a map <math|\<phi\>:R\<rightarrow\>S> between rings
   <strong|additive> if it is a homomorphism of the additive groups.
@@ -65,9 +65,9 @@
     <math|x\<in\>R>.
   </observation>
 
-  The operation\<times\>is the <strong|multiplication> of the ring, and we
-  write <math|x y> in place of <math|x\<times\>y>, and in the absence of
-  parentheses multiplication precedes addition in the usual way. We say
+  The operation <math|\<times\>> is the <strong|multiplication> of the ring,
+  and we write <math|x y> in place of <math|x\<times\>y>, and in the absence
+  of parentheses multiplication precedes addition in the usual way. We say
   <math|R> is a <strong|commutative> ring if the multiplication is
   commutative.
 
@@ -671,7 +671,7 @@
   </proof>
 
   <\remark>
-    To show that <math|Hom<around|(|M,N|)>> is a closed under pointwise
+    To show that <math|Hom<around|(|M,N|)>> is closed under pointwise
     addition and negation it is essential that <math|N> be commutative.
   </remark>
 
@@ -760,7 +760,7 @@
     identity <math|0<rsub|n\<times\>m>> and for which the inverse of
     <math|A\<in\>M<rsub|n,m>(R)> is the matrix <math|\<minus\>A> with
     <math|(\<minus\>A)<rsub|i,j>=\<minus\>A<rsub|i,j>>. Furthermore, if
-    <math|><math|A\<in\>M<rsub|n,m><around*|(|R|)>,B,B<rprime|'>\<in\>M<rsub|n,m><around*|(|R|)>>,
+    <math|><math|A\<in\>M<rsub|n,m><around*|(|R|)>,B,B<rprime|'>\<in\>M<rsub|m,l><around*|(|R|)>>,
     and <math|C,C<rprime|'>\<in\>M<rsub|p,n>(R)> then
     <math|C(A*B)=(C*A)B,A(B+B<rprime|'>)=(A*B)+(A*B<rprime|'>),(C+C<rprime|'>)A=(C*A)+(C<rprime|'>A),A*I<rsub|m>=A>
     and <math|I<rsub|n>A=A>.
@@ -864,18 +864,20 @@
       \<bbb-R\>\<rightarrow\>\<bbb-H\>;\<lambda\>\<mapsto\><matrix|<tformat|<table|<row|<cell|\<lambda\>>|<cell|0>>|<row|<cell|0>|<cell|\<lambda\>>>>>>
     </equation*>
 
-    has image equal to the centre of <math|\<bbb-H\>>, and so induces a real
-    vector space structure on <math|\<bbb-H\>> in which left and right
-    multiplication maps are linear. The vector space if 4-dimensional and
+    has image equal to <hlink|the centre of
+    <math|\<bbb-H\>>|https://linearalgebras.com/solution-abstract-algebra-exercise-7-1-8.html>,
+    and so induces a real vector space structure on <math|\<bbb-H\>> in which
+    left and right multiplication maps are linear. The vector space is
+    4-dimensional and
 
     <\equation*>
       <around*|(|<tabular*|<tformat|<cwith|1|-1|1|1|cell-halign|c>|<cwith|1|-1|1|1|cell-lborder|0ln>|<cwith|1|-1|2|2|cell-halign|c>|<cwith|1|-1|2|2|cell-rborder|0ln>|<table|<row|<cell|1>|<cell|0>>|<row|<cell|0>|<cell|1>>>>>|)>,<around*|(|<tabular*|<tformat|<cwith|1|-1|1|1|cell-halign|c>|<cwith|1|-1|1|1|cell-lborder|0ln>|<cwith|1|-1|2|2|cell-halign|c>|<cwith|1|-1|2|2|cell-rborder|0ln>|<table|<row|<cell|i>|<cell|0>>|<row|<cell|0>|<cell|-i>>>>>|)>,<around*|(|<tabular*|<tformat|<cwith|1|-1|1|1|cell-halign|c>|<cwith|1|-1|1|1|cell-lborder|0ln>|<cwith|1|-1|2|2|cell-halign|c>|<cwith|1|-1|2|2|cell-rborder|0ln>|<table|<row|<cell|0>|<cell|1>>|<row|<cell|-1>|<cell|0>>>>>|)><text|,
       and ><around*|(|<tabular*|<tformat|<cwith|1|-1|1|1|cell-halign|c>|<cwith|1|-1|1|1|cell-lborder|0ln>|<cwith|1|-1|2|2|cell-halign|c>|<cwith|1|-1|2|2|cell-rborder|0ln>|<table|<row|<cell|0>|<cell|i>>|<row|<cell|i>|<cell|0>>>>>|)>
     </equation*>
 
-    form a basis. <math|A>s element of the group <math|U(\<bbb-H\>)>, these
-    generate an 8 element subgroup called the <strong|quaternion group> and
-    denoted <math|Q<rsub|8>>.
+    form a basis. As element of the group <math|U(\<bbb-H\>)>, these generate
+    an 8 element subgroup called the <strong|quaternion group> and denoted
+    <math|Q<rsub|8>>.
 
     There is another natural ring homomorphism: the map
 
@@ -1010,7 +1012,7 @@
     Any other ring homomorphism <math|\<phi\>> with
     <math|\<phi\><around*|(|r|)>=r> for all <math|r\<in\>R>, and
     <math|\<phi\><around*|(|X|)>=\<lambda\>> must agree with the given map on
-    <math|R[X]> by the homomorphism property of <math|\<psi\>>, and hence
+    <math|R[X]> by the homomorphism property of <math|\<phi\>>, and hence
     uniqueness follows.
   </proof>
 
@@ -1194,8 +1196,8 @@
     of multiples of <math|N>. Moreover, if <math|I> is a non-zero ideal in
     <math|\<bbb-Z\>> then it has a minimal positive element <math|N>. If
     <math|z\<in\>I>, then by the division algorithm we can write
-    <math|z=N*w+r> for some <math|q\<in\>\<bbb-Z\>> and
-    <math|0\<leqslant\>r\<less\>N>. But <math|r=z-N*w\<in\>I> and hence
+    <math|z=N*q+r> for some <math|q\<in\>\<bbb-Z\>> and
+    <math|0\<leqslant\>r\<less\>N>. But <math|r=z-N*q\<in\>I> and hence
     <math|r=0> by minimality of <math|N>, and so
     <math|I=<around*|\<langle\>|N|\<rangle\>>>. In particular, <em|every>
     ideal in <math|\<bbb-Z\>> is principal.
@@ -1605,15 +1607,18 @@
     <math|\<phi\>> is a bijection, <math|J=\<phi\>(\<langle\>M\<rangle\>)={M*z
     (mod N):z\<in\>\<bbb-Z\>}=\<langle\>M (mod N)\<rangle\>> is principal.
 
-    <math|<around*|\<langle\>|15|\<rangle\>>\<subset\><around*|\<langle\>|3|\<rangle\>>,<around*|\<langle\>|5|\<rangle\>>\<subset\>\<bbb-Z\>=<around*|\<langle\>|1|\<rangle\>>>
-    corresponds to the ideal structure of
-    <math|\<bbb-Z\>/<around*|\<langle\>|15|\<rangle\>>>:
+    Eg. Ideals in <math|\<bbb-Z\><rsub|15>> are
 
-    <math|<around*|\<langle\>|3|\<rangle\>><rsub|\<bbb-Z\>/<around*|\<langle\>|15|\<rangle\>>>=<around*|{|0
-    mod 15,3 mod 15,\<ldots\>,12 mod 15|}>>
+    <math|\<phi\><around*|(|\<bbb-Z\><rsub|15>|)>=<around*|{|0 mod 15|}>,>
 
-    <math|<around*|\<langle\>|5|\<rangle\>><rsub|\<bbb-Z\>/<around*|\<langle\>|15|\<rangle\>>>=<around*|{|0
-    mod 15,5 mod 15,10 mod 15|}>>
+    <math|\<phi\><around*|(|\<bbb-Z\><rsub|5>|)>=<around*|{|0 mod 15,5 mod
+    15,10 mod 15|}>,>
+
+    <math|\<phi\><around*|(|\<bbb-Z\><rsub|3>|)>=<around*|{|0 mod 15,3 mod
+    15,\<ldots\>,12 mod 15|}>,>
+
+    <math|\<phi\><around*|(|\<bbb-Z\>|)>=<around*|{|0 mod 15,1 mod
+    15,\<ldots\>,14 mod 15|}>>.
   </example>
 
   <subsection|Proper, prime, and maximal ideals>
@@ -1662,6 +1667,8 @@
   <\proposition>
     Suppose that <math|R> is a commutative ring and <math|I> is an ideal in
     <math|R>. Then <math|I> is maximal if and only if <math|R/I> is a field.
+    In particular <math|R> is a field if and only if <math|{0<rsub|R>}> is
+    maximal (so it is the only proper ideal).
   </proposition>
 
   <\proof>
@@ -1727,7 +1734,7 @@
   <\observation>
     If <math|R\<subset\>\<bbb-K\>\<subset\>\<bbb-F\>> for fields
     <math|\<bbb-K\>> and <math|\<bbb-F\>>, then
-    <math|Frac<rsub|\<bbb-F\>><around*|(|\<bbb-R\>|)>\<subset\>\<bbb-K\>>. In
+    <math|Frac<rsub|\<bbb-F\>><around*|(|R|)>\<subset\>\<bbb-K\>>. In
     particular, <math|Frac<rsub|\<bbb-F\>><around*|(|\<bbb-K\>|)>=\<bbb-K\>>.
   </observation>
 
@@ -1797,7 +1804,7 @@
     <math|\<bbb-C\>> is a field extension of <math|\<bbb-R\>> of degree 2,
     and <em|any> <math|z\<in\>\<bbb-C\>> is <math|\<bbb-R\>>-algebraic since
     <math|p(X)\<assign\>X<rsup|2>\<minus\>2 Re z*X+<around*|\||z|\|><rsup|2>>
-    has <math|p\<in\>R[X]<rsup|\<ast\>>> and <math|p(z)=0>.
+    has <math|p\<in\>\<bbb-R\>[X]<rsup|\<ast\>>> and <math|p(z)=0>.
   </example>
 
   <\example>
@@ -1810,8 +1817,9 @@
   For <math|\<bbb-F\>> a subfield of <math|\<bbb-K\>>, and
   <math|\<alpha\>\<in\>\<bbb-K\>>, the set
   <math|\<bbb-F\><around*|[|\<alpha\>|]>> (recall the definition from Example
-  2.22) is an integral domain since it is a subring of a field, but in
-  general <math|\<bbb-F\><around*|[|\<alpha\>|]>> is not a field. We write
+  2.22) is an integral domain since it is a subring of a field, but if
+  <math|\<alpha\>> is <math|\<bbb-F\>>-transcendental,
+  <math|\<bbb-F\><around*|[|\<alpha\>|]>> is not a field. We write
   <math|\<bbb-F\><around*|(|\<alpha\>|)>> for
   <math|Frac<rsub|\<bbb-K\>>(\<bbb-F\>[\<alpha\>])>, the field of fractions
   of <math|\<bbb-F\><around*|[|\<alpha\>|]>>, and call it the <strong|field
@@ -1969,18 +1977,22 @@
     The commutative rings where (i) holds are exactly the integral domains,
     since if <math|R> is a commutative ring that is not an integral domain
     then there are <math|x,a\<in\>R<rsup|\<ast\>>> with <math|x*a=0>, and so
-    <math|x*a\<divides\>x*0>, but <math|a\<ndivides\>0>.
+    <math|x*0\<divides\>x*a>, but <math|0\<ndivides\>a>.
 
     Commutative rings where (ii) holds are sometimes called associator rings.
-    Exercise I.6 gives examples of integral domains that are not associator
-    rings, and associator rings that are not integral domains.
+    Exercise I.6 asks for a proofs that <math|C(\<bbb-R\>)> with the
+    operations of pointwise addition and multiplication, which is a
+    commutative ring, is not an associator ring; and that
+    <math|\<bbb-Z\><rsub|N>> is an associator ring, though
+    <math|\<bbb-Z\><rsub|N>> is not an integral domain when <math|N> is not
+    prime.
   </remark>
 
   <subsection|Irreducibles, primes, and uniqueness of factorisation>
 
   We say that <math|x\<in\>R> is <strong|irreducible> if <math|x\<nsim\>1>
   and whenever <math|a\<divides\>x> we have <math|a\<sim\>x> or
-  <math|a\<sim\>1>; or, equivalently, if <math|\<langle\>x\<rangle\>> is
+  <math|a\<sim\>1>. In the language of ideals <math|\<langle\>x\<rangle\>> is
   maximal amongst proper <em|principal> ideals. In particular, if
   <math|y\<sim\>x> and <math|x> is irreducible then <math|y> is also
   irreducible.
@@ -2043,7 +2055,8 @@
     <math|0=a>, which can be rewritten as <math|0\<divides\>a>, or
     <math|0=b>, which can be rewritten as <math|0\<divides\>b>. This is the
     special case in the integers of the fact in Proposition 2.28 that a ring
-    is an integral domain if and only if <math|0<rsub|R>> is prime.
+    <math|R> is an integral domain if and only if
+    <math|<around*|{|0<rsub|R>|}>> is prime.
   </example>
 
   <\example>
@@ -2063,7 +2076,7 @@
 
   <\proof>
     First <math|U(R)=U(R[X])> and so <math|r\<nsim\>1> in <math|R> if and
-    only if <math|r\<nsim\>1> in <math|U(R[X])>.
+    only if <math|r\<nsim\>1> in <math|R[X]>.
 
     Suppose <math|r> is prime in <math|R[X]>, and that <math|r\<divides\>a*b>
     in <math|R>. If either <math|a> or <math|b> is 0 then without loss of
@@ -2203,10 +2216,12 @@
     2X|)>\<mapsto\>p<around*|(|0|)>> is a well-defined surjective ring
     homomorphism with kernel <math|<around*|\<langle\>|X<around*|(|mod
     2X|)>|\<rangle\>>>, and <math|\<bbb-Z\>> is an integral domain so the
-    kernel is prime by the First Isomorphism Theorem; for the latter
-    <math|<around*|\<langle\>|3<around*|(|mod 2X|)>|\<rangle\>>> is a proper
-    principal ideal in <math|R> which properly contains
-    <math|<around*|\<langle\>|X<around*|(|mod 2X|)>|\<rangle\>>>.
+    kernel is prime by the First Isomorphism Theorem and Proposition 2.28;
+    for the latter <math|<around*|\<langle\>|3<around*|(|mod
+    2X|)>|\<rangle\>>> is a proper principal ideal in <math|R> which properly
+    contains <math|<around*|\<langle\>|X<around*|(|mod 2X|)>|\<rangle\>>>
+    since <math|3<around*|(|mod 2X|)>\<times\>X<around*|(|mod
+    2X|)>=X<around*|(|mod 2X|)>>.
   </example>
 
   In the integers (as we shall see shortly) the converse holds as a
@@ -2350,9 +2365,9 @@
   <\example>
     If <math|a,b\<in\>\<bbb-F\><around*|[|X|]><rsup|\<ast\>>> and
     <math|b\<ndivides\>a> then <math|a-b q> is not the zero polynomial for
-    any <math|q\<in\>\<bbb-F\><around*|[|X|]>>, and we can pick <math|b q>
+    any <math|q\<in\>\<bbb-F\><around*|[|X|]>>, and we can pick <math| q>
     such that <math|a-b q> has smallest possible degree. Then
-    <math|r\<assign\>a+b*q> has <math|deg r\<less\>deg b>, since otherwise
+    <math|r\<assign\>a-b*q> has <math|deg r\<less\>deg b>, since otherwise
     writing <math|\<lambda\>> for the ratio between the lead coefficient of
     <math|r> and that of <math|b> we have
     <math|r(X)\<minus\>\<lambda\>X<rsup|deg r\<minus\>deg b>b(X)> of the form
@@ -2409,8 +2424,8 @@
 
   <\proof>
     Let <math|I> be a non-principal ideal, <math|x<rsub|0>\<in\>I>,
-    <math|\<exists\>y<rsub|1>\<in\>I\<setminus\><around*|{|x<rsub|0>|}>>. By
-    Bezout <math|\<exists\>x<rsub|1>> such that
+    <math|\<exists\>y<rsub|1>\<in\>I\<setminus\><around*|\<langle\>|x<rsub|0>|\<rangle\>>>.
+    By Bezout <math|\<exists\>x<rsub|1>> such that
     <math|<around*|\<langle\>|x<rsub|1>|\<rangle\>>=<around*|\<langle\>|y<rsub|1>,x<rsub|0>|\<rangle\>>>.
     Then <math|x<rsub|1>\<divides\>x<rsub|0>> and
     <math|x<rsub|1>\<nsim\>x<rsub|0>>, <math|x<rsub|1>\<in\>I>. Now repeat
